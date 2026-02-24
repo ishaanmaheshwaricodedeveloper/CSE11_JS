@@ -1,2 +1,4 @@
-console.log("Hello World");
-document.write("Hello World");
+    var sayhello = function() {
+        alert("Hello");
+    }
+    sayhello();
