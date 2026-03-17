@@ -15,3 +15,10 @@ const t = document.querySelectorAll("ul li");
 for(let x = 0; x < t.length; x++){
     t[x].style.color = "green";
 }
+const element = document.getElementById("myH1");
+let text = element.getAttribute("class");
+console.log(text);    
+function myFunction() {
+    document.getElementById("demo").setAttribute("class", "DemoClass");
+    alert("Class changed to DemoClass");
+}                                                                                             
