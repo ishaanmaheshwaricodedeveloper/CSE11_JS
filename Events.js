@@ -19,9 +19,12 @@ function onMouseMove() {
 function ondoubleClick() {
     console.log("You double clicked the button");
 }
-const y = document.querySelector("input");
-y.addEventListener('focus',onhandlefocus);
-y.addEventListener('blur',onhandleblur);
+const inp = document.querySelector("input");
+if(inp)
+    {
+inp.addEventListener('focus',onhandlefocus);
+inp.addEventListener('blur',onhandleblur);
+    }
 function onhandlefocus() {
     console.log("You focused on the input");
 }
@@ -31,3 +34,4 @@ function onhandleblur() {
 function onLoad() {
     alert("Page loaded");
 }
+// members[0].powers[2]
